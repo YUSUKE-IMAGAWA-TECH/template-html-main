@@ -1,0 +1,91 @@
+@use 'global' as *;
+
+.test {
+  // text-align: center;
+  margin-top: 400px;
+  margin-left: prem(16);
+  // display: flex;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 14px;
+  color: $white;
+  line-height: 1.5714;
+  border: 1px solid $lightGreen;
+
+  padding: 16px 0;
+  white-space: nowrap;
+
+  overflow: hidden;
+  // align-items: center;
+  // justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: rem(206);
+  background-color: $lightGreen;
+}
+
+// ボタンのアニメーション
+// .button::after {
+//   background-color: $white;
+//   content: '';
+//   height: 100%;
+//   // color: $lightGreen;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   transform: scale(0, 1);
+//   transform-origin: left top;
+//   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+// }
+// .button:hover {
+//   color: $white;
+//   background-color: $lightGreen;
+// }
+// .button:hover::after {
+//   // transform: scale(1, 1);
+//   transform: scale(1);
+//   background-color: $lightGreen;
+//   transform-origin: right top;
+// }
+
+// ボタンの影
+.button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  max-width: rem(206);
+  height: 54px;
+  border: 1px solid $lightGreen;
+  left: 4px;
+  top: 4px;
+  z-index: -1;
+}
+
+// ボタンの矢印
+
+.button__arrow {
+  position: relative;
+  display: inline-block;
+  width: rem(40);
+  height: rem(1);
+  background-color: $white;
+  vertical-align: middle;
+}
+.button__arrow::after {
+  position: absolute;
+  content: '';
+  height: rem(1);
+  width: rem(10);
+  background-color: $white;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+  transform-origin: top right;
+}

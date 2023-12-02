@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
@@ -13,8 +13,10 @@ $padding-sp: 15px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: 'Gotu', sans-serif;
+$second-font-family: 'Lato', sans-serif;
+$third-font-family: 'Noto Sans JP', sans-serif;
+$forth-font-family: 'Noto Serif', serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -34,3 +36,7 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
+$gray: #d9d9d9;
+$lightBlue: #ddf0f1;
+$darkGreen: #0d2936;
+$lightGreen: #408f95;
