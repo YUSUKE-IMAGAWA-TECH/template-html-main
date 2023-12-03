@@ -1,0 +1,222 @@
+@use 'global' as *;
+
+.header {
+  height: rem(80);
+  background-color: rgba(13, 41, 54, 0.68);
+  @include mq('md') {
+    height: rem(90);
+  }
+}
+
+.header__inner {
+  padding-left: rem(15);
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  @include mq('md') {
+    padding: 0 rem(40);
+  }
+}
+
+.header__logo {
+  max-width: rem(74);
+  width: 100%;
+  height: inherit;
+  z-index: 1000;
+  @include mq('md') {
+    max-width: rem(133);
+  }
+}
+
+.header__logo a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__nav {
+  display: none;
+  height: inherit;
+  @include mq('md') {
+    display: block;
+  }
+}
+
+.header__nav-items {
+  display: flex;
+  height: inherit;
+}
+
+.header__nav-item {
+  height: inherit;
+}
+
+.header__nav-item a {
+  padding: 0 rem(20);
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $base-font-family;
+  flex-direction: column;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1;
+  color: $white;
+  text-transform: capitalize;
+}
+
+.header__nav-item span {
+  margin-top: rem(4);
+  display: block;
+  font-size: rem(10);
+  font-weight: $regular;
+  font-family: $third-font-family;
+  line-height: 1.5;
+  color: $white;
+}
+
+// ハンバーガー
+.header__hamburger {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 999;
+  width: rem(40);
+  height: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.header__hamburger.is-open {
+  background-color: transparent;
+}
+
+.header__hamburger span {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: rem(15);
+  height: 1px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.header__hamburger span:nth-of-type(1) {
+  top: rem(-4);
+}
+
+.header__hamburger span:nth-of-type(2) {
+  top: 0;
+}
+
+.header__hamburger span:nth-of-type(3) {
+  top: rem(4);
+}
+
+.header__hamburger.is-open span:nth-of-type(1) {
+  top: 0;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.header__hamburger.is-open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header__hamburger.is-open span:nth-of-type(3) {
+  top: rem(-2);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+// ドロワー
+.header__drawer {
+  // padding: rem(228) 0;
+  padding-top: 80px;
+  display: none;
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $lightGreen;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.header__drawer::-webkit-scrollbar {
+  display: none;
+}
+
+.header__drawer-logo {
+}
+
+.header__drawer-nav {
+  height: inherit;
+  display: flex;
+  padding-right: rem(15);
+  padding-left: rem(37);
+  gap: 18px;
+
+  @include mq('md') {
+  }
+}
+
+.header__drawer-item a {
+  display: flex;
+  padding: rem(12) 0;
+  font-family: $third-font-family;
+  width: 100%;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.125;
+  color: $white;
+  text-align: center;
+}
+.header__drawer-item.header__drawer-title a {
+  font-weight: $bold;
+  padding-top: 28px;
+  position: relative;
+  @include mq('md') {
+  }
+}
+.header__drawer-item.header__drawer-title a::before {
+  position: absolute;
+  content: '';
+  background-image: url('../images/common/hitode.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 28px;
+  left: -20px;
+  width: 18px;
+  height: 18px;
+  z-index: 1100;
+}
+
+.header__drawer-left {
+  height: inherit;
+  @include mq('md') {
+  }
+}
+
+.header__drawer-right {
+  // margin-left: 25px;
+  @include mq('md') {
+  }
+}

@@ -1,0 +1,21 @@
+@use "global" as *;
+
+
+.swiper-slide img {
+  aspect-ratio: 375 / 665;
+  min-height: rem(350);
+  object-fit: cover;
+  @include mq('md') {
+    aspect-ratio: 1440 / 814;
+    min-height: rem(400);
+  }
+}
+.mv__slider,
+.swiper-slide picture,
+.swiper-slide img {
+  height: 100vh;
+  min-height: rem(350);
+  @include mq('md') {
+    min-height: rem(400);
+  }
+}

@@ -1,0 +1,87 @@
+@use 'global' as *;
+
+//MV
+
+.mv {
+  height: 100vh;
+  min-height: rem(350);
+  width: 100%;
+  @include mq('md') {
+    height: 100vh;
+    min-height: rem(400);
+  }
+}
+.mv__inner {
+  position: relative;
+  width: 100%;
+  min-height: rem(350);
+  @include mq('md') {
+    min-height: rem(400);
+  }
+}
+
+.mv__swiper-mask{
+  overflow: hidden;
+}
+
+.mv__title-wrap {
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  white-space: nowrap;
+  // max-width: rem(310);
+  text-align: center;
+  @include mq('md') {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // max-width: 100%;
+    // width: 100%;
+    // margin-left: 6%;
+  }
+}
+
+.mv__title {
+  width: 100%;
+  white-space: nowrap;
+  font-size: rem(40);
+  font-weight: $regular;
+  // line-height: 1.428;
+  font-family: $second-font-family;
+  letter-spacing: 0.54em;
+  color: $white;
+  text-transform: uppercase;
+  @include mq('md') {
+    text-align: left;
+    letter-spacing: 0.54em;
+    line-height: 1.25;
+    font-size: rem(80);
+  }
+}
+
+.mv__sub-title {
+  margin-top: rem(3);
+  font-size: rem(20);
+  text-align: center;
+  font-family: $base-font-family;
+  text-align: center;
+  // letter-spacing: 0em;
+  color: $white;
+  font-weight: $regular;
+  // color: $beigeText;
+  width: 100%;
+  @include mq('md') {
+    font-size: rem(18);
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 0;
+
+    letter-spacing: 0.12em;
+    font-weight: $regular;
+  }
+}

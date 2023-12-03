@@ -29,21 +29,249 @@
       src="https://kit.fontawesome.com/fbe101ccb3.js"
       crossorigin="anonymous"></script>
     <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="test">
-        
-        <a href="#" class="button"> 
-          <span>View more</span>
-          <span class="button__arrow"></span> </a>
-       
+    <header class="header layout-header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <img src="./assets/images/common/logoPC.png" alt="CodeUps" />
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__nav-items">
+            <li class="header__nav-item">
+              <a href="#">campaign<span>キャンペーン</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">About us<span>私たちについて</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">information<span>ダイビング情報</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">blog<span>ブログ</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">voice<span>お客様の声</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">price<span>料金一覧</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">FAQ<span>よくある質問</span></a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Contact<span>お問合せ</span></a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ハンバーガー -->
+        <button class="header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- ドロワーメニュー -->
+
+        <div class="header__drawer js-drawer">
+          <!-- <div class="header__drawer-logo">
+            
+            <a href="#">
+              <img src="./assets/images/common/logoPC.png" alt="LOGO" />
+            </a>
+          </div> -->
+          <nav class="header__drawer-nav">
+            <!-- ドロワーメニュー左側 -->
+
+            <div class="header__drawer-left">
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">キャンペーン</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">ライセンス取得</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">貸切体験ダイビング</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">ナイトダイビング</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">私たちについて</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">ダイビング情報</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">ライセンス講習</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">体験ダイビング</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items header__drawer-title">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">ブログ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ドロワーメニュー右側 -->
+            <div class="header__drawer-right">
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">お客様の声</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">料金一覧</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">ライセンス講習</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">体験ダイビング</a>
+                  </li>
+                  <li class="header__drawer-item">
+                    <a href="#">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">よくある質問</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">プライバシーポリシー</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">利用規約</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__drawer-container">
+                <ul class="header__drawer-items">
+                  <li class="header__drawer-item header__drawer-title">
+                    <a href="#">おい問わ合せ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
+    </header>
+
+    <main>
+      <!-- MV Swiper -->
+
+      <section class="mv">
+        <div class="mv__inner">
+          <div class="mv__swiper-mask">
+            <div class="mv__slider js-top-mv-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="./assets/images/common/mv-PC1.jpg"
+                      media="(min-width: 768px)" />
+                    <img
+                      src="./assets/images/common/mv-SP1.png"
+                      alt="サングラスをかけているスーツの男性" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="./assets/images/common/mv-PC2.jpg"
+                      media="(min-width: 768px)" />
+                    <img
+                      src="./assets/images/common/mv-SP2.png"
+                      alt="胸ポケットに手を入れている男性" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="./assets/images/common/mv-PC3.jpg"
+                      media="(min-width: 768px)" />
+                    <img
+                      src="./assets/images/common/mv-SP3.png"
+                      alt="ワイルドなスーツの男性" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      srcset="./assets/images/common/mv-PC4.jpg"
+                      media="(min-width: 768px)" />
+                    <img
+                      src="/images/fv-img-sp3.jpg"
+                      alt="ワイルドなスーツの男性" />
+                  </picture>
+                </div>
+              </div>
+              <div class="mv__title-wrap">
+                <h2 class="mv__title">diving</h2>
+                <p class="mv__sub-title">into the ocean</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Campaign -->
+      <section class="campaign layout-campaign">
+        <div class="campaign__inner inner">
+          <div class="campaign__section-title section-title">
+            <h3 class="section-title__main">
+              <span class="section-title__color">c</span>ampaign
+            </h3>
+            <p class="section-title__sub">キャンペーン</p>
+          </div>
+          <!-- Campaign Swiper -->
+          
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
