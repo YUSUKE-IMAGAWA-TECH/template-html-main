@@ -35,7 +35,7 @@ jQuery(function ($) {
     $('.js-hamburger').removeClass('is-open');
   }
 });
-// スライダー
+// MV スライダー
 const swiper = new Swiper('.js-top-mv-swiper', {
   loop: true,
   effect: 'fade',
@@ -44,4 +44,48 @@ const swiper = new Swiper('.js-top-mv-swiper', {
   autoplay: {
     delay: 3000,
   },
+});
+
+// Top-Campaign スライダー
+jQuery(function ($) {
+  // リサイズ処理（PC時のみ矢印表示）
+  const service_slideLength = document.querySelectorAll(
+    '.js-service-swiper .swiper-slide'
+  ).length;
+  $(window).resize(function () {
+    service_arrow();
+  });
+  service_arrow();
+  function service_arrow() {
+    if (
+      window.matchMedia('(max-width: 767px)').matches ||
+      service_slideLength <= 3
+    ) {
+      $('.js-service-arrow').hide();
+    } else {
+      $('.js-service-arrow').show();
+    }
+  }
+
+  // Swiper
+  const service_swiper = new Swiper('.js-top-campaign-swiper', {
+    loop: true,
+    speed: 2000,
+    slidesPerView: 1.5,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });
