@@ -1,4 +1,4 @@
-@use "global" as *;
+@use 'global' as *;
 
 @if $startFrom == sp {
   .inner {
@@ -7,7 +7,7 @@
     padding-left: $padding-sp;
     margin-right: auto;
     margin-left: auto;
-    @include mq("md") {
+    @include mq('md') {
       max-width: $inner + strip-unit($padding-pc) * 2;
       padding-right: $padding-pc;
       padding-left: $padding-pc;
@@ -21,24 +21,23 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    @include mq("md") {
+    @include mq('md') {
       padding-right: $padding-sp;
       padding-left: $padding-sp;
     }
   }
 }
 
-.inner{
+.inner {
   width: 100%;
   max-width: 600px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-@include mq('md') {
-max-width: 1080px;
-padding-right: 25px;
-padding-left: 25px;
-}
-
+  @include mq('md') {
+    max-width: 1130px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
