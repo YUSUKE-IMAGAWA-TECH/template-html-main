@@ -1,0 +1,29 @@
+@use 'global' as *;
+
+.top-blog {
+  @include mq('md') {
+    background-image: url(../images/common/top-blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-position: center;
+    z-index: -1;
+    height: 60.1684%;
+    padding-top: 100px;
+    content: '';
+    width: 100%;
+  }
+}
+.top-blog__cards {
+  margin-top: 24px;
+  @include mq('md') {
+    margin-top: 80px;
+  }
+}
+
+.top-blog__button {
+  margin-top: 40px;
+  text-align: center;
+  @include mq('md') {
+    margin-top: 80px;
+  }
+}

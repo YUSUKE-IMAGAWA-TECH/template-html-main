@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.swiper-wrapper {
+  padding-bottom: 10px;
+  @include mq('md') {
+    padding-bottom: 10px;
+  }
+}

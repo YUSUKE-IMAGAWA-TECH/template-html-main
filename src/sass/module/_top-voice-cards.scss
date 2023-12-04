@@ -1,0 +1,85 @@
+@use 'global' as *;
+
+.top-voice-cards {
+  display: grid;
+  gap: 40px;
+  grid-template-rows: 1fr;
+
+  @include mq('md') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.top-voice-cards__item a {
+  padding: 16px 24px;
+  display: block;
+  height: 100%;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  @include mq('md') {
+    padding: 24px;
+  }
+}
+
+.top-voice-cards__container {
+  display: flex;
+  gap: 13px;
+  align-items: flex-end;
+  @include mq('md') {
+    gap: 16px;
+  }
+}
+
+.top-voice-cards__age {
+  font-family: $third-font-family;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: $regular;
+  color: $darkGreen;
+
+  @include mq('md') {
+  }
+}
+
+.top-voice-cards__category {
+  font-family: $third-font-family;
+  font-size: 12px;
+  font-weight: $regular;
+  line-height: 1.8333;
+  color: $lightGreen;
+  border: 1px solid $lightGreen;
+  text-align: center;
+  padding: 4px 12px;
+
+  @include mq('md') {
+  }
+}
+
+.top-voice-cards__title {
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $medium;
+  color: $darkGreen;
+  border-bottom: 1px solid $lightGreen;
+  padding-bottom: 4px;
+  @include mq('md') {
+    font-size: prem(24);
+  }
+}
+.top-voice-cards__img img {
+  aspect-ratio: 151 /117;
+  object-fit: cover;
+  width: 100%;
+  @include mq('md') {
+    aspect-ratio: 180 / 140;
+  }
+}
+.top-voice-cards__text {
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $darkGreen;
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}

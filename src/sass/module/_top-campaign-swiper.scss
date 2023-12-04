@@ -3,11 +3,15 @@
 .swiper-slide {
   height: auto;
 }
-
-.top-campaign-swiper__swiper-slide a {
+.top-campaign-swiper__swiper-slide {
+  // max-width: 333px;
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+.top-campaign-swiper__swiper-slide a {
+  height: 100%;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 .top-campaign__swiper-container {
   overflow-x: hidden;
@@ -19,9 +23,7 @@
   width: 100vw;
 }
 
-.top-campaign-swiper__swiper-slide {
-  max-width: 333px;
-}
+
 
 .top-campaign-swiper__swiper-slide a {
   width: 100%;
@@ -29,7 +31,7 @@
 }
 .top-campaign-swiper__item {
   height: 100%;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+  // box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
   @include mq('md') {
     //  max: width 333px; ;
   }

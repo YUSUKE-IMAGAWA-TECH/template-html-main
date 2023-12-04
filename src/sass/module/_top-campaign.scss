@@ -4,12 +4,78 @@
   background-color: transparent;
 }
 
-
 .top-campaign__inner.inner {
   @include mq('md') {
-  width: 100%;
-  max-width: 1260px;
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    max-width: 1260px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+}
+.top-campaign__section-title {
+  @include mq('md') {
+    // position: relative;
+  }
+}
+.top-campaign__button-wrap {
+  @include mq('md') {
+    position: absolute;
+    display: flex;
+    // width: 100%;
+    gap: 80px;
+    z-index: 9999;
+  }
+}
+
+.top-campaign__button-prev {
+  @include mq('md') {
+    // background: none;
+    // height: auto;
+    // position: static;
+    // width: auto;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;;
+    // background-color: $red;
+    // z-index: 10;
+  }
+}
+.top-campaign__button-prev::after {
+  @include mq('md') {
+    background-image: url(../images/common/prev-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    content: '';
+    width: 80px;
+    height: 80px;
+  }
+}
+.top-campaign__button-next {
+  @include mq('md') {
+    background: none;
+    // height: auto;
+    // position: static;
+    // width: auto;
+    width: 80px;
+    height: 80px;
+    // z-index: 10;
+    cursor: pointer;
+    pointer-events:visible
+  }
+}
+
+.top-campaign__button-next::after {
+  @include mq('md') {
+    background-image: url(../images/common/next-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    content: '';
+    width: 80px;
+    height: 80px;
   }
 }

@@ -50,7 +50,7 @@ const swiper = new Swiper('.js-top-mv-swiper', {
 jQuery(function ($) {
   // リサイズ処理（PC時のみ矢印表示）
   const service_slideLength = document.querySelectorAll(
-    '.js-service-swiper .swiper-slide'
+    '.js-top-campaign-swiper .swiper-slide'
   ).length;
   $(window).resize(function () {
     service_arrow();
@@ -59,7 +59,7 @@ jQuery(function ($) {
   function service_arrow() {
     if (
       window.matchMedia('(max-width: 767px)').matches ||
-      service_slideLength <= 3
+      service_slideLength <= 2
     ) {
       $('.js-service-arrow').hide();
     } else {
@@ -74,18 +74,29 @@ jQuery(function ($) {
     slidesPerView: 1.5,
     spaceBetween: 24,
     autoplay: {
-      delay: 2000,
+      delay: 0,
       disableOnInteraction: false,
     },
     breakpoints: {
       768: {
-        slidesPerView: 3.5,
-        spaceBetween: 20,
+        slidesPerView: 2.5,
+        loopAdditionalSlides: 3.5,
+
+        spaceBetween: 30,
+      },
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        loopAdditionalSlides: 3.5,
+
+        spaceBetween: 40,
       },
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.top-campaign__button-next',
+      prevEl: '.top-campaign__button-prev',
+      // clickable: true,
     },
   });
 });

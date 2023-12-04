@@ -1,0 +1,74 @@
+@use 'global' as *;
+.top-info {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $lightBlue;
+  @include mq('md') {
+    padding-top: 100px;
+    padding-bottom: 76px;
+  }
+}
+
+.top-info__container {
+  margin-top: 24px;
+  @include mq('md') {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+}
+.top-info__img{
+  @include mq('md') {
+    width: 50%;
+  
+  }
+}
+.top-info__img img {
+  aspect-ratio: 345 / 227;
+  object-fit: cover;
+  width: 100%;
+  @include mq('md') {
+    aspect-ratio: 540 / 356;
+  }
+}
+.top-info__body {
+  margin-top: 24px;
+  @include mq('md') {
+    margin-top: 0;
+    width: 45.5556%;
+  }
+}
+
+.top-info__title {
+  font-family: $third-font-family;
+  font-weight: $bold;
+  color: $darkGreen;
+  font-size: 20px;
+  line-height: 1.2;
+  border-bottom: 1px solid $lightGreen;
+  padding-bottom: 4px;
+  @include mq('md') {
+    font-size: 24px;
+    line-height: 1;
+    padding-bottom: 8px;
+  }
+}
+
+.top-info__text {
+  font-family: $third-font-family;
+  font-size: 16px;
+  font-weight: $regular;
+  color: $darkGreen;
+  line-height: 1.5;
+  @include mq('md') {
+  }
+}
+
+.top-info__button {
+  margin-top: 40px;
+  text-align: center;
+  @include mq('md') {
+  }
+}

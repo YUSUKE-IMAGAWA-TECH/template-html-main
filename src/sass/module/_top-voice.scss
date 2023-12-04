@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.top-voice {
+  padding-bottom: 80px;
+  @include mq('md') {
+    padding-bottom: 140px;
+  }
+}
+.top-voice__cards {
+  margin-top: 40px;
+  @include mq('md') {
+    margin-top: 30px;
+  }
+}
+
+.top-voice__button {
+  margin-top: 40px;
+  text-align: center;
+  @include mq('md') {
+    margin-top: 80px;
+  }
+}
