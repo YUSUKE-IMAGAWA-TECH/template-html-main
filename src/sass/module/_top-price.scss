@@ -21,6 +21,7 @@
   }
 }
 .top-price__img {
+  position: relative;
   @include mq('md') {
     // margin-left: auto;
     width: 45.555555%;
@@ -31,12 +32,23 @@
   aspect-ratio: 345 / 227;
   object-fit: cover;
   width: 100%;
+  display: block;
   @include mq('md') {
     aspect-ratio: 492 / 746;
     // width: 69.07407407%;
     // width: 45.5555555%;
     height: 100%;
   }
+}
+
+.top-price__img .color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: $lightGreen;
 }
 
 .top-price__list {
@@ -52,9 +64,9 @@
     margin-top: 0;
   }
 }
-.top-price__list-wrap:not(:first-of-type){
+.top-price__list-wrap:not(:first-of-type) {
   @include mq('md') {
-  margin-top: rem(40);
+    margin-top: rem(40);
   }
 }
 .top-price__title {
