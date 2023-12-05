@@ -23,6 +23,7 @@
   @include mq('md') {
     position: absolute;
     display: flex;
+    right: rem(180);
     // width: 100%;
     gap: rem(80);
     z-index: 9999;
@@ -37,7 +38,7 @@
     // width: auto;
     width: rem(80);
     height: rem(80);
-    cursor: pointer;;
+    cursor: pointer;
     // background-color: $red;
     // z-index: 10;
   }
@@ -64,7 +65,7 @@
     height: rem(80);
     // z-index: 10;
     cursor: pointer;
-    pointer-events:visible
+    pointer-events: visible;
   }
 }
 

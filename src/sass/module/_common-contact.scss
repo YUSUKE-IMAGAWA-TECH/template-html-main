@@ -1,5 +1,22 @@
 @use 'global' as *;
 
+.common-contact__inner {
+  position: relative;
+}
+
+.common-contact__inner::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/common/fish-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(109);
+  height: rem(50);
+  top: 15%;
+  right: -4%;
+}
+
 .common-contact__container {
   @include mq('md') {
     display: flex;
@@ -11,11 +28,10 @@
   }
 }
 
-.common-contact__info{
-
+.common-contact__info {
   @include mq('md') {
-  // display: flex;
-  width: 45%;
+    // display: flex;
+    width: 45%;
   }
 }
 .common-contact__logo {
@@ -42,7 +58,7 @@
   }
 }
 
-.common-contact__address{
+.common-contact__address {
   @include mq('md') {
     text-align: left;
     margin-top: rem(2);
@@ -57,19 +73,17 @@
   }
 }
 .common-contact__map iframe {
-
-@include mq('md') {
-width: rem(273);
-height: rem(148);
-}
-
-}
-
-.common-contact__here{
   @include mq('md') {
-  width: 47%;
-  text-align: center;
-  border-left: solid rem(1) $lightGreen;
+    width: rem(273);
+    height: rem(148);
+  }
+}
+
+.common-contact__here {
+  @include mq('md') {
+    width: 47%;
+    text-align: center;
+    border-left: solid rem(1) $lightGreen;
   }
 }
 .common-contact__title {

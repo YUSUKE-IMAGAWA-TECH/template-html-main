@@ -1,12 +1,5 @@
 @use 'global' as *;
 
-.test {
-  // text-align: center;
-  margin-top: rem(400);
-  margin-left: prem(16);
-  // display: flex;
-}
-
 .button {
   position: relative;
   display: inline-block;
@@ -15,10 +8,10 @@
   color: $white;
   line-height: 1.5714;
   border: rem(1) solid $lightGreen;
-
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   padding: rem(16) 0;
   white-space: nowrap;
-
+  z-index: 1;
   // overflow: hidden;
   // align-items: center;
   // justify-content: center;
@@ -30,29 +23,31 @@
 
 // ボタンのアニメーション
 .button::after {
-  background-color: $white;
-  content: '';
-  height: 100%;
-  // color: $lightGreen;
-  left: 0;
+  background: $white;
   position: absolute;
   top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
   transform: scale(0, 1);
   transform-origin: left top;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
-  width: 100%;
-  height: 100%;
   z-index: -1;
 }
+// .button:hover {
+//   color: $white;
+//   background-color: $lightGreen;
+// }
 .button:hover {
-  color: $white;
-  background-color: $lightGreen;
+  color: $lightGreen;
 }
 .button:hover::after {
-  // transform: scale(1, 1);
-  transform: scale(1);
-  background-color: $lightGreen;
-  transform-origin: right top;
+  transform: scale(1, 1);
+  // transform: scale(1);
+  // color: $lightGreen;
+  // background-color: $lightGreen;
+  // transform-origin: right top;
 }
 
 // ボタンの影
@@ -60,12 +55,13 @@
   position: absolute;
   content: '';
   width: 100%;
+  // display: inline-block;
   max-width: rem(206);
   height: rem(54);
   border: rem(1) solid $lightGreen;
   left: rem(4);
   top: rem(4);
-  // z-index: -1;
+  z-index: -1;
 }
 
 // ボタンの矢印
@@ -88,4 +84,19 @@
   top: 0;
   transform: rotate(45deg);
   transform-origin: top right;
+}
+
+// .button__arrow:hover {
+//   background-color: $white;
+// }
+// .button__arrow:hover::after {
+//   background-color: $white;
+// }
+
+.button:hover .button__arrow {
+  background-color: $lightGreen; // ここでホバー時の背景色を白に設定
+}
+
+.button:hover .button__arrow::after {
+  background-color: $lightGreen; // ここでホバー時の矢印の部分の背景色も白に設定
 }
