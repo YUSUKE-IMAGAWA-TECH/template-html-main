@@ -61,42 +61,43 @@ jQuery(function ($) {
       window.matchMedia('(max-width: 767px)').matches ||
       service_slideLength <= 2
     ) {
-      $('.js-service-arrow').hide();
+      $('.js-top-campaign-arrow').hide();
     } else {
-      $('.js-service-arrow').show();
+      $('.js-top-campaign-arrow').show();
     }
   }
 
   // Swiper
   const service_swiper = new Swiper('.js-top-campaign-swiper', {
     loop: true,
-    speed: 2000,
+    speed: 3000,
     slidesPerView: 1.5,
     spaceBetween: 24,
+    paginationClickable: true,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
     },
     breakpoints: {
       768: {
-        slidesPerView: 2.5,
-        loopAdditionalSlides: 3.5,
+        slidesPerView: 4.1,
+        loopAdditionalSlides: 4.5,
 
         spaceBetween: 30,
       },
     },
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-        loopAdditionalSlides: 3.5,
+    // breakpoints: {
+    //   1024: {
+    //     slidesPerView: 3,
+    //     loopAdditionalSlides: 3.5,
 
-        spaceBetween: 40,
-      },
-    },
+    //     spaceBetween: 40,
+    //   },
+    // },
     navigation: {
       nextEl: '.top-campaign__button-next',
       prevEl: '.top-campaign__button-prev',
-      // clickable: true,
+      clickable: true,
     },
   });
 });

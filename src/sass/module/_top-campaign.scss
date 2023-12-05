@@ -2,12 +2,13 @@
 
 .top-campaign {
   background-color: transparent;
+  overflow: hidden;
 }
 
 .top-campaign__inner.inner {
   @include mq('md') {
     width: 100%;
-    max-width: 1260px;
+    max-width: rem(1260);
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -23,7 +24,7 @@
     position: absolute;
     display: flex;
     // width: 100%;
-    gap: 80px;
+    gap: rem(80);
     z-index: 9999;
   }
 }
@@ -34,8 +35,8 @@
     // height: auto;
     // position: static;
     // width: auto;
-    width: 80px;
-    height: 80px;
+    width: rem(80);
+    height: rem(80);
     cursor: pointer;;
     // background-color: $red;
     // z-index: 10;
@@ -49,8 +50,8 @@
     background-position: center;
     display: block;
     content: '';
-    width: 80px;
-    height: 80px;
+    width: rem(80);
+    height: rem(80);
   }
 }
 .top-campaign__button-next {
@@ -59,8 +60,8 @@
     // height: auto;
     // position: static;
     // width: auto;
-    width: 80px;
-    height: 80px;
+    width: rem(80);
+    height: rem(80);
     // z-index: 10;
     cursor: pointer;
     pointer-events:visible
@@ -75,7 +76,7 @@
     background-position: center;
     display: block;
     content: '';
-    width: 80px;
-    height: 80px;
+    width: rem(80);
+    height: rem(80);
   }
 }

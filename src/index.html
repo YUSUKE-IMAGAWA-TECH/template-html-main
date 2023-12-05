@@ -34,9 +34,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
     <header class="header layout-header">
@@ -244,7 +246,7 @@
                       srcset="./assets/images/common/mv-PC4.jpg"
                       media="(min-width: 768px)" />
                     <img
-                      src="/images/fv-img-sp3.jpg"
+                      src="./assets/images/common/mv-SP4.png"
                       alt="ワイルドなスーツの男性" />
                   </picture>
                 </div>
@@ -271,8 +273,8 @@
 
           <!-- 次へ前へボタン -->
           <div class="top-campaign__button-wrap">
-            <div class="top-campaign__button-prev js-service-arrow"></div>
-            <div class="top-campaign__button-next js-service-arrow"></div>
+            <div class="top-campaign__button-prev js-top-campaign-arrow"></div>
+            <div class="top-campaign__button-next js-top-campaign-arrow"></div>
           </div>
           <div class="top-campaign__swiper-container">
             <div class="top-campaign__swiper top-campaign-swiper">
@@ -491,7 +493,7 @@
       </section>
 
       <!-- Information -->
-      <section class="top-info lahyout-top-info">
+      <section class="top-info layout-top-info">
         <div class="top-info__inner inner">
           <div class="top-campaign__section-title section-title">
             <h3 class="section-title__main">
@@ -798,6 +800,38 @@
               >View more
               <span class="button__arrow"></span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- common-contact -->
+      <section class="common-contact layout-common-contact">
+        <div class="common-contact__inner inner">
+          <div class="common-contact__container">
+            <div class="common-contact__info">
+              <h3 class="common-contact__logo">
+                <img
+                  src="./assets/images/common/logo-coloreSP.svg"
+                  alt="CodeUps" />
+              </h3>
+              <div class="common-contact__access">
+                <span class="common-contact__text">沖縄県那覇市1-1</span>
+                <span class="common-contact__text">TEL:0120-000-0000</span>
+                <span class="common-contact__text">営業時間:8:30-19:00</span>
+                <span class="common-contact__text">定休日:毎週火曜日</span>
+                <div class="common-contact__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1789.5135835504034!2d127.7015532!3d26.2283068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bdd9c1c829f%3A0x7681a611ddf31ec6!2z44CSOTAwLTAwMDQg5rKW57iE55yM6YKj6KaH5biC6YqY6IuF77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1701683152240!5m2!1sja!2sjp"
+                    width="500"
+                    height="500"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="common-contact__here"></div>
           </div>
         </div>
       </section>

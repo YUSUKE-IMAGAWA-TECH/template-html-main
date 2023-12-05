@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.layout-common-contact{
+  margin-top:rem(50);
+  margin-bottom: rem(104);
+  @include mq('md') {
+  margin-top: rem(80);
+  margin-bottom: rem(180);
+  }
+}

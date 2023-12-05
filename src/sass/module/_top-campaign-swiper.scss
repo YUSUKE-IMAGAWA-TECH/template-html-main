@@ -11,7 +11,7 @@
 }
 .top-campaign-swiper__swiper-slide a {
   height: 100%;
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: rem(2) rem(2) rem(2) 0 rgba(0, 0, 0, 0.25);
 }
 .top-campaign__swiper-container {
   overflow-x: hidden;
@@ -22,8 +22,6 @@
   margin-right: calc(50% - 50vw);
   width: 100vw;
 }
-
-
 
 .top-campaign-swiper__swiper-slide a {
   width: 100%;
@@ -38,52 +36,52 @@
 }
 
 .top-campaign-swiper__body {
-  padding: 14px 14px 24px;
+  padding: rem(14) rem(14) rem(24);
   height: 100%;
   @include mq('md') {
-    padding: 24px 16px 40px;
+    padding: rem(24) rem(16) rem(40);
   }
 }
 
 .top-campaign-swiper__tag {
-  border: 1px solid $lightGreen;
-  padding: 4px 12px;
+  border: rem(1) solid $lightGreen;
+  padding: rem(4) rem(12);
   width: 100%;
-  max-width: 108px;
+  max-width: rem(108);
 
   font-family: $third-font-family;
-  font-size: 12px;
+  font-size: rem(12);
   font-weight: $regular;
   line-height: 1.8333;
   color: $lightGreen;
   @include mq('md') {
-    padding: 6px 16px;
+    padding: rem(6) rem(16);
   }
 }
 
 .top-campaign-swiper__title {
   font-family: $third-font-family;
   color: $darkGreen;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.5;
   font-weight: $medium;
-  margin-top: 4px;
-  border-bottom: 1px solid $lightGreen;
-  padding-bottom: 8px;
+  margin-top: rem(4);
+  border-bottom: rem(1) solid $lightGreen;
+  padding-bottom: rem(8);
   @include mq('md') {
   }
 }
 .top-campaign-swiper__text {
   font-family: $third-font-family;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 1.714;
   color: $darkGreen;
   font-weight: $regular;
   text-align: center;
-  margin-top: 8px;
+  margin-top: rem(8);
 
   @include mq('md') {
-    margin-top: 16px;
+    margin-top: rem(16);
   }
 }
 
@@ -97,35 +95,36 @@
 .top-campaign-swiper__price-sub {
   color: $darkGreen;
   font-family: $second-font-family;
-  font-size: 20px;
+  font-size: rem(20);
   font-weight: $bold;
   line-height: 1;
   text-decoration: line-through;
   text-decoration-color: $red;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: rem(3);
   display: flex;
   align-items: center;
   @include mq('md') {
-    font-size: 24px;
+    font-size: rem(24);
   }
 }
 
 .top-campaign-swiper__price-main {
   font-family: $second-font-family;
-  font-size: 32px;
+  font-size: rem(32);
   font-weight: $bold;
   line-height: 1;
   color: $lightGreen;
   @include mq('md') {
-    font-size: 40px;
+    // font-size: rem(40);
+    font-size: clamp(0.75rem, 0.1338rem + 2.6291vw, 2.5rem);
   }
 }
 
 .top-campaign-swiper__button {
   text-align: center;
-  margin-top: 40px;
+  margin-top: rem(40);
   @include mq('md') {
-    margin-top: 78px;
+    margin-top: rem(78);
   }
 }
 // .top-campaign-swiper__img {

@@ -1,22 +1,22 @@
 @use 'global' as *;
 .top-info {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
   background-color: $lightBlue;
   @include mq('md') {
-    padding-top: 100px;
-    padding-bottom: 76px;
+    padding-top: rem(100);
+    padding-bottom: rem(76);
   }
 }
 
 .top-info__container {
-  margin-top: 24px;
+  margin-top: rem(24);
   @include mq('md') {
-    margin-top: 40px;
+    margin-top: rem(40);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: rem(48);
   }
 }
 .top-info__img{
@@ -34,7 +34,7 @@
   }
 }
 .top-info__body {
-  margin-top: 24px;
+  margin-top: rem(24);
   @include mq('md') {
     margin-top: 0;
     width: 45.5556%;
@@ -45,20 +45,20 @@
   font-family: $third-font-family;
   font-weight: $bold;
   color: $darkGreen;
-  font-size: 20px;
+  font-size: rem(20);
   line-height: 1.2;
-  border-bottom: 1px solid $lightGreen;
-  padding-bottom: 4px;
+  border-bottom: rem(1) solid $lightGreen;
+  padding-bottom: rem(4);
   @include mq('md') {
-    font-size: 24px;
+    font-size: rem(24);
     line-height: 1;
-    padding-bottom: 8px;
+    padding-bottom: rem(8);
   }
 }
 
 .top-info__text {
   font-family: $third-font-family;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: $regular;
   color: $darkGreen;
   line-height: 1.5;
@@ -67,7 +67,7 @@
 }
 
 .top-info__button {
-  margin-top: 40px;
+  margin-top: rem(40);
   text-align: center;
   @include mq('md') {
   }

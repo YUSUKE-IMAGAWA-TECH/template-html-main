@@ -114,7 +114,7 @@
   transform: translateX(-50%);
   display: block;
   width: rem(15);
-  height: 1px;
+  height: rem(1);
   background-color: #fff;
   transition: 0.5s;
 }
@@ -148,7 +148,7 @@
 // ドロワー
 .header__drawer {
   // padding: rem(228) 0;
-  padding-top: 80px;
+  padding-top: rem(80);
   display: none;
   position: absolute;
   z-index: 900;
@@ -175,7 +175,7 @@
   display: flex;
   padding-right: rem(15);
   padding-left: rem(37);
-  gap: 18px;
+  gap: rem(18);
 
   @include mq('md') {
   }
@@ -194,7 +194,7 @@
 }
 .header__drawer-item.header__drawer-title a {
   font-weight: $bold;
-  padding-top: 28px;
+  padding-top: rem(28);
   position: relative;
   @include mq('md') {
   }
@@ -206,10 +206,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  top: 28px;
-  left: -20px;
-  width: 18px;
-  height: 18px;
+  top: rem(28);
+  left: rem(-20);
+  width: rem(18);
+  height: rem(18);
   z-index: 1100;
 }
 

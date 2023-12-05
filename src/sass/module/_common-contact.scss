@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.common-contact__logo {
+  text-align: center;
+  border-bottom: rem(1) solid $lightGreen;
+  @include mq('md') {
+  }
+}
+.common-contact__logo img {
+  width: rem(174);
+  display: inline-block;
+  padding-bottom: rem(6);
+  @include mq('md') {
+    width: rem(200);
+  }
+}
+
+.common-contact__map {
+  text-align: center;
+  @include mq('md') {
+  }
+}

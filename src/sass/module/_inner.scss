@@ -30,14 +30,14 @@
 
 .inner {
   width: 100%;
-  max-width: 600px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: rem(600);
+  padding-right: rem(15);
+  padding-left: rem(15);
   margin-right: auto;
   margin-left: auto;
   @include mq('md') {
-    max-width: 1130px;
-    padding-right: 25px;
-    padding-left: 25px;
+    max-width: rem(1130);
+    padding-right: rem(25);
+    padding-left: rem(25);
   }
 }
