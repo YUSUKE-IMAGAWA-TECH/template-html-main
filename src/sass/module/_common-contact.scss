@@ -1,5 +1,23 @@
 @use 'global' as *;
 
+.common-contact__container {
+  @include mq('md') {
+    display: flex;
+    gap: rem(80);
+    padding: rem(80) rem(50);
+    justify-content: space-between;
+
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.common-contact__info{
+
+  @include mq('md') {
+  // display: flex;
+  width: 45%;
+  }
+}
 .common-contact__logo {
   text-align: center;
   border-bottom: rem(1) solid $lightGreen;
@@ -15,8 +33,85 @@
   }
 }
 
+.common-contact__access {
+  text-align: center;
+  margin-top: rem(16);
+  @include mq('md') {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.common-contact__address{
+  @include mq('md') {
+    text-align: left;
+    margin-top: rem(2);
+  }
+}
+
 .common-contact__map {
   text-align: center;
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-top: 0;
+  }
+}
+.common-contact__map iframe {
+
+@include mq('md') {
+width: rem(273);
+height: rem(148);
+}
+
+}
+
+.common-contact__here{
+  @include mq('md') {
+  width: 47%;
+  text-align: center;
+  border-left: solid rem(1) $lightGreen;
+  }
+}
+.common-contact__title {
+  font-family: $base-font-family;
+  font-size: rem(80);
+  font-weight: $regular;
+  line-height: 1;
+  color: $darkGreen;
+
+  margin-top: rem(40);
+  @include mq('md') {
+  }
+}
+
+.common-contact__title-color {
+  color: $lightGreen;
+}
+.common-contact__sub-title {
+  text-align: center;
+  font-family: $third-font-family;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $lightGreen;
+  @include mq('md') {
+  }
+}
+
+.common-contact__booking {
+  text-align: center;
+  font-family: $third-font-family;
+  line-height: 1.2857;
+  color: $lightGreen;
+  font-size: rem(14);
+  font-weight: $regular;
+  @include mq('md') {
+  }
+}
+
+.common-contact__button {
+  text-align: center;
+  margin-top: rem(40);
   @include mq('md') {
   }
 }
