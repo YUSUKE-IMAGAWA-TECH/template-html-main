@@ -4,26 +4,25 @@
   padding-bottom: rem(80);
   background-color: $lightBlue;
   @include mq('md') {
-    padding-top: rem(100);
-    padding-bottom: rem(76);
+    padding-top: rem(98);
+    padding-bottom: rem(77);
   }
 }
 
 .top-info__container {
-  margin-top: rem(24);
+  margin-top: rem(28);
   @include mq('md') {
     margin-top: rem(40);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: rem(48);
+    gap: rem(49);
   }
 }
-.top-info__img{
+.top-info__img {
   position: relative;
   @include mq('md') {
     width: 50%;
-  
   }
 }
 .top-info__img img {
@@ -36,7 +35,7 @@
   }
 }
 // アニメーション
-.top-info__img .color{
+.top-info__img .color {
   position: absolute;
   top: 0;
   right: 0;
@@ -49,7 +48,7 @@
   margin-top: rem(24);
   @include mq('md') {
     margin-top: 0;
-    width: 45.5556%;
+    width: 45.7%;
   }
 }
 
@@ -69,6 +68,7 @@
 }
 
 .top-info__text {
+  margin-top: rem(8);
   font-family: $third-font-family;
   font-size: rem(16);
   font-weight: $regular;

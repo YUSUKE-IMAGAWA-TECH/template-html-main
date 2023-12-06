@@ -35,11 +35,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script
-      
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-    
+
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -47,7 +45,12 @@
       <div class="header__inner">
         <h1 class="header__logo">
           <a href="#">
-            <img src="./assets/images/common/logoPC.png" alt="CodeUps" />
+            <picture class="">
+              <source
+                srcset="./assets/images/common/logo-PC.svg"
+                media="(min-width: 768px)" />
+              <img src="./assets/images/common/logoSP.svg" alt="CodeUps" />
+            </picture>
           </a>
         </h1>
         <nav class="header__nav">
@@ -180,7 +183,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">プライバシー<br />ポリシー</a>
                   </li>
                 </ul>
               </div>
@@ -480,7 +483,7 @@
               <div class="top-about-us__container">
                 <p class="top-about-us__text">
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 </p>
                 <div class="top-about-us__button">
                   <a href="" class="button"
@@ -530,10 +533,10 @@
       <section class="top-blog layout-top-blog">
         <div class="top-blog__inner inner">
           <div class="top-campaign__section-title section-title">
-            <h3 class="section-title__main">
-              <span class="section-title__color">B</span>log
+            <h3 class="section-title__main section-title__main--blog">
+              <span class="section-title__color section-title__color--blog">B</span>log
             </h3>
-            <p class="section-title__sub">ブログ</p>
+            <p class="section-title__sub section-title__sub--blog">ブログ</p>
           </div>
           <ul class="top-blog__cards top-blog-cards">
             <li class="top-blog-cards__item">
@@ -550,7 +553,7 @@
                   >
                   <h4 class="top-blog-cards__title">ライセンス取得</h4>
                   <p class="top-blog-cards__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
                 </div>
@@ -570,7 +573,7 @@
                   >
                   <h4 class="top-blog-cards__title">ウミガメと泳ぐ</h4>
                   <p class="top-blog-cards__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
                 </div>
@@ -590,7 +593,7 @@
                   >
                   <h4 class="top-blog-cards__title">カクレクマノミ</h4>
                   <p class="top-blog-cards__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
                 </div>
@@ -638,8 +641,8 @@
                 </div>
                 <div class="top-voice-cards__body">
                   <p class="top-voice-cards__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。
                   </p>
                 </div>
@@ -668,13 +671,43 @@
                 </div>
                 <div class="top-voice-cards__body">
                   <p class="top-voice-cards__text">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                     ここにテキストが入ります。ここにテキストが入ります。
                   </p>
                 </div>
               </a>
             </li>
+            <!-- <li class="top-voice-cards__item">
+              <a href="#" class="">
+                <div class="top-voice-cards__container">
+                  <div class="top-voice-cards__info">
+                    <div class="top-voice-cards__tag">
+                      <p class="top-voice-cards__age">20代(男性)</p>
+                      <div class="top-voice-cards__category">
+                        ファンダイビング
+                      </div>
+                    </div>
+                    <p class="top-voice-cards__title">
+                      ここにタイトルが入ります。ここにタイトル
+                    </p>
+                  </div>
+                  <picture class="top-voice-cards__img js-colorbox">
+                    <source
+                      srcset="./assets/images/common/top-voicePC2.jpg"
+                      media="(min-width: 768px)" />
+                    <img src="./assets/images/common/top-voiceSP2.jpg" alt="" />
+                  </picture>
+                </div>
+                <div class="top-voice-cards__body">
+                  <p class="top-voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
+              </a>
+            </li> -->
           </ul>
           <div class="top-voice__button">
             <a href="" class="button"
@@ -694,7 +727,7 @@
             <p class="section-title__sub">料金一覧</p>
           </div>
           <div class="top-price__container">
-            <picture class="top-price__img  js-colorbox">
+            <picture class="top-price__img js-colorbox">
               <source
                 srcset="./assets/images/common/top-pricePC.jpg"
                 media="(min-width: 768px)" />

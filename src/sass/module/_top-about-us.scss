@@ -8,7 +8,7 @@
   position: relative;
 }
 .top-about-us__image {
-  margin-top: rem(24);
+  margin-top: rem(29);
   position: relative;
   display: flex;
   justify-content: center;
@@ -65,10 +65,11 @@
     margin-top: 0;
     display: flex;
     gap: rem(40);
+    align-items: center;
 
     padding: 0 rem(15);
-    top: 50%;
-    left: 20%;
+    top: 35%;
+    left: 17%;
   }
 }
 
@@ -102,7 +103,7 @@
 
 .top-about-us__container {
   text-align: center;
-  margin-top: rem(50);
+  margin-top: rem(17);
   @include mq('md') {
     margin-top: rem(40);
   }

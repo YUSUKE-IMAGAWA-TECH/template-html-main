@@ -24,14 +24,15 @@
 
 .footer__icons {
   display: flex;
-
+  gap: rem(16);
+  margin-top: rem(17);
   @include mq('md') {
   }
 }
 
 .footer__facebook {
-  width: rem(19.5);
-  height: rem(19.5);
+  width: rem(24);
+  height: rem(24);
   @include mq('md') {
     width: rem(32);
     height: rem(32);
@@ -39,8 +40,8 @@
 }
 
 .footer__instagram {
-  width: rem(19.5);
-  height: rem(19.5);
+  width: rem(24);
+  height: rem(24);
   @include mq('md') {
     width: rem(32);
     height: rem(32);
@@ -50,9 +51,10 @@
   height: inherit;
   display: flex;
   padding-right: rem(15);
-  padding-left: rem(37);
-  gap: rem(18);
-  padding-bottom: rem(40);
+  padding-left: rem(23);
+  gap: rem(39);
+  padding-bottom: rem(23);
+  margin-top: rem(12);
 
   @include mq('md') {
     padding-bottom: rem(80);
@@ -70,6 +72,7 @@
   line-height: 1.125;
   color: $white;
   text-align: center;
+  white-space: nowrap;
 }
 .footer__item.footer__item-title a {
   font-weight: $bold;

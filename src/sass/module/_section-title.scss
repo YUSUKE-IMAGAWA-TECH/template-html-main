@@ -21,7 +21,16 @@ color: $darkGreen;
   color: $lightGreen;
   text-transform: capitalize;
 }
-
+.section-title__color.section-title__color--blog{
+  @include mq('md') {
+  color: $white;
+  }
+}
+.section-title__main.section-title__main--blog{
+  @include mq('md') {
+  color: $white;
+  }
+}
 .section-title__sub{
 font-family: $third-font-family;
 color: $lightGreen;
@@ -30,7 +39,12 @@ font-weight: $regular;
 line-height: 1.5;
 margin-top: rem(4);
   @include mq('md') {
-  
+  margin-top: rem(3);
   }
 
+}
+.section-title__sub.section-title__sub--blog{
+  @include mq('md') {
+  color: $white;
+  }
 }

@@ -8,10 +8,13 @@
     // background-position: center;
     z-index: -1;
     height: 60.1684%;
-    padding-top: rem(100);
+    padding-top: rem(97);
     content: '';
     width: 100%;
   }
+}
+.top-blog__inner.inner {
+  padding: 0 rem(21);
 }
 .top-blog__cards {
   margin-top: rem(24);

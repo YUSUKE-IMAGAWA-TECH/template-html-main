@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(rem(330), 1fr));
   column-gap: rem(40);
-  row-gap: rem(40);
+  row-gap: rem(35);
   // padding: 0 rem(48);
   @include mq('md') {
     grid-template-columns: repeat(auto-fill, minmax(rem(330), 1fr));
@@ -23,10 +23,12 @@
 
 .top-blog-cards__item a {
   display: block;
-  padding: rem(16) rem(16) rem(24) rem(16);
+  padding: rem(21) rem(16) rem(24) rem(16);
   height: 100%;
   transition: opacity 0.3s;
   @include mq('md') {
+  padding: rem(16) rem(19) rem(24) rem(16);
+    
   }
 }
 .top-blog-cards__item a:hover {
@@ -41,7 +43,7 @@
 }
 
 .top-blog-cards__body {
-  margin-top: rem(24);
+  margin-top: rem(17);
   @include mq('md') {
   }
 }
@@ -58,10 +60,12 @@
 
 .top-blog-cards__title {
   font-family: $third-font-family;
+  border-bottom: 1px solid $lightGreen;
   font-size: rem(16);
   line-height: 1.5;
   font-weight: $medium;
   color: $darkGreen;
+  padding-bottom: rem(3);
 
   @include mq('md') {
   }
@@ -72,6 +76,7 @@
   line-height: 1.5;
   font-weight: $regular;
   color: $darkGreen;
+  margin-top: rem(16);
   @include mq('md') {
   }
 }

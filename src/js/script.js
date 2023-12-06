@@ -71,7 +71,7 @@ jQuery(function ($) {
   const service_swiper = new Swiper('.js-top-campaign-swiper', {
     loop: true,
     speed: 3000,
-    slidesPerView: 1.5,
+    slidesPerView: 1.31,
     spaceBetween: 24,
     paginationClickable: true,
     autoplay: {
@@ -80,7 +80,7 @@ jQuery(function ($) {
     },
     breakpoints: {
       768: {
-        slidesPerView: 4.1,
+        slidesPerView: 4.058,
         loopAdditionalSlides: 4.5,
 
         spaceBetween: 30,

@@ -13,8 +13,8 @@
   background-position: center;
   width: rem(109);
   height: rem(50);
-  top: 15%;
-  right: -4%;
+  top: 0%;
+  right: 0%;
 }
 
 .common-contact__container {
@@ -22,13 +22,17 @@
     display: flex;
     gap: rem(80);
     padding: rem(80) rem(50);
+    padding-bottom: rem(73);
     justify-content: space-between;
 
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: rem(4) rem(4) rem(10) 0px rgba(0, 0, 0, 0.25);
   }
 }
 
 .common-contact__info {
+  width: 85.50724638%;
+  margin-right: auto;
+  margin-left: auto;
   @include mq('md') {
     // display: flex;
     width: 45%;
@@ -43,7 +47,7 @@
 .common-contact__logo img {
   width: rem(174);
   display: inline-block;
-  padding-bottom: rem(6);
+  padding-bottom: rem(0);
   @include mq('md') {
     width: rem(200);
   }
@@ -52,9 +56,11 @@
 .common-contact__access {
   text-align: center;
   margin-top: rem(16);
+
   @include mq('md') {
     display: flex;
     justify-content: space-between;
+    margin-top: rem(24);
   }
 }
 
@@ -63,6 +69,17 @@
     text-align: left;
     margin-top: rem(2);
   }
+}
+
+.common-contact__text {
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $darkGreen;
+}
+.common-contact__text:not(:first-of-type) {
+  margin-top: rem(3);
 }
 
 .common-contact__map {
@@ -90,11 +107,14 @@
   font-family: $base-font-family;
   font-size: rem(80);
   font-weight: $regular;
-  line-height: 1;
+  line-height: 0.91;
   color: $darkGreen;
+  text-align: center;
 
-  margin-top: rem(40);
+  margin-top: rem(35);
   @include mq('md') {
+    text-indent: 0.3em;
+    margin-top: rem(27);
   }
 }
 
@@ -118,8 +138,10 @@
   line-height: 1.2857;
   color: $lightGreen;
   font-size: rem(14);
+  margin-top: rem(8);
   font-weight: $regular;
   @include mq('md') {
+    text-indent: 1.7em;
   }
 }
 
@@ -127,5 +149,7 @@
   text-align: center;
   margin-top: rem(40);
   @include mq('md') {
+    margin-top: rem(38);
+    margin-left: rem(20);
   }
 }

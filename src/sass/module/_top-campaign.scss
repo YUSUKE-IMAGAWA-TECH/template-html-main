@@ -8,7 +8,7 @@
 .top-campaign__inner.inner {
   @include mq('md') {
     width: 100%;
-    max-width: rem(1260);
+    max-width: rem(1130);
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -23,7 +23,8 @@
   @include mq('md') {
     position: absolute;
     display: flex;
-    right: rem(180);
+    right: rem(26);
+    top: rem(7);
     // width: 100%;
     gap: rem(80);
     z-index: 9999;
