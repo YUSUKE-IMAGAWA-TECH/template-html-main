@@ -16,7 +16,6 @@
 }
 .top-campaign__section-title {
   @include mq('md') {
-    // position: relative;
   }
 }
 .top-campaign__button-wrap {
@@ -25,7 +24,6 @@
     display: flex;
     right: rem(26);
     top: rem(7);
-    // width: 100%;
     gap: rem(80);
     z-index: 9999;
   }
@@ -33,15 +31,9 @@
 
 .top-campaign__button-prev {
   @include mq('md') {
-    // background: none;
-    // height: auto;
-    // position: static;
-    // width: auto;
     width: rem(80);
     height: rem(80);
     cursor: pointer;
-    // background-color: $red;
-    // z-index: 10;
   }
 }
 .top-campaign__button-prev::after {
@@ -59,12 +51,9 @@
 .top-campaign__button-next {
   @include mq('md') {
     background: none;
-    // height: auto;
-    // position: static;
-    // width: auto;
+
     width: rem(80);
     height: rem(80);
-    // z-index: 10;
     cursor: pointer;
     pointer-events: visible;
   }

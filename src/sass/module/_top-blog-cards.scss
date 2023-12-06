@@ -5,10 +5,8 @@
   grid-template-columns: repeat(auto-fill, minmax(rem(330), 1fr));
   column-gap: rem(40);
   row-gap: rem(35);
-  // padding: 0 rem(48);
   @include mq('md') {
     grid-template-columns: repeat(auto-fill, minmax(rem(330), 1fr));
-    // padding: 0 rem(10);
   }
 }
 
@@ -16,8 +14,6 @@
   box-shadow: 0px rem(4) rem(4) 0px rgba(0, 0, 0, 0.25);
   background-color: $white;
   @include mq('md') {
-    // padding-top: 100px;
-    
   }
 }
 
@@ -27,8 +23,7 @@
   height: 100%;
   transition: opacity 0.3s;
   @include mq('md') {
-  padding: rem(16) rem(19) rem(24) rem(16);
-    
+    padding: rem(16) rem(19) rem(24) rem(16);
   }
 }
 .top-blog-cards__item a:hover {

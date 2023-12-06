@@ -28,7 +28,6 @@
   @include mq('lg') {
     left: -5%;
     bottom: -4.7%;
-    // right: -6.4%;
   }
 }
 
@@ -40,14 +39,11 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 8.611%;
-    // align-items: flex-end;
-    // justify-content: center;
   }
 }
 .top-price__img {
   position: relative;
   @include mq('md') {
-    // margin-left: auto;
     width: 45.555555%;
   }
 }
@@ -59,8 +55,7 @@
   display: block;
   @include mq('md') {
     aspect-ratio: 492 / 746;
-    // width: 69.07407407%;
-    // width: 45.5555555%;
+
     height: 100%;
   }
 }
@@ -76,7 +71,6 @@
 }
 
 .top-price__list {
-  // margin-top: 8px;
   @include mq('md') {
     width: 45.5555555%;
   }
@@ -106,9 +100,6 @@
   }
 }
 
-// .top-price__items{
-//   margin-top: 40px;
-// }
 .top-price__list-item {
   display: flex;
   margin-top: rem(8);

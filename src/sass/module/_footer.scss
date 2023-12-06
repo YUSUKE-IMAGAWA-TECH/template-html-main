@@ -55,11 +55,9 @@
   padding-right: rem(15);
   padding-left: rem(23);
   gap: rem(39);
-  // padding-bottom: rem(23);
   margin-top: rem(12);
 
   @include mq('md') {
-    // padding-bottom: rem(80);
     column-gap: rem(143);
     margin-top: 0;
   }
@@ -108,7 +106,6 @@
 }
 
 .footer__right {
-  // margin-left: 25px;
   @include mq('md') {
     display: flex;
     column-gap: rem(141);

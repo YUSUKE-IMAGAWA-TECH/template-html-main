@@ -12,9 +12,7 @@
   padding: rem(16) 0;
   white-space: nowrap;
   z-index: 1;
-  // overflow: hidden;
-  // align-items: center;
-  // justify-content: center;
+
   text-align: center;
   width: 100%;
   max-width: rem(206);
@@ -35,19 +33,12 @@
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
 }
-// .button:hover {
-//   color: $white;
-//   background-color: $lightGreen;
-// }
+
 .button:hover {
   color: $lightGreen;
 }
 .button:hover::after {
   transform: scale(1, 1);
-  // transform: scale(1);
-  // color: $lightGreen;
-  // background-color: $lightGreen;
-  // transform-origin: right top;
 }
 
 // ボタンの影
@@ -55,7 +46,6 @@
   position: absolute;
   content: '';
   width: 100%;
-  // display: inline-block;
   max-width: rem(206);
   height: rem(54);
   border: rem(1) solid $lightGreen;
@@ -85,13 +75,6 @@
   transform: rotate(45deg);
   transform-origin: top right;
 }
-
-// .button__arrow:hover {
-//   background-color: $white;
-// }
-// .button__arrow:hover::after {
-//   background-color: $white;
-// }
 
 .button:hover .button__arrow {
   background-color: $lightGreen; // ここでホバー時の背景色を白に設定

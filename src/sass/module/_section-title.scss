@@ -1,50 +1,47 @@
-@use "global" as *;
+@use 'global' as *;
 
-.section-title{
+.section-title {
   text-align: center;
 }
 
-.section-title__main{
-font-family: $base-font-family;
-font-weight: $regular;
-font-size:rem(32);
-line-height: 1.25;
-color: $darkGreen;
-
+.section-title__main {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  font-size: rem(32);
+  line-height: 1.25;
+  color: $darkGreen;
 
   @include mq('md') {
-  font-size: rem(40);
-  
+    font-size: rem(40);
   }
 }
-.section-title__color{
+.section-title__color {
   color: $lightGreen;
   text-transform: capitalize;
 }
-.section-title__color.section-title__color--blog{
+.section-title__color.section-title__color--blog {
   @include mq('md') {
-  color: $white;
+    color: $white;
   }
 }
-.section-title__main.section-title__main--blog{
+.section-title__main.section-title__main--blog {
   @include mq('md') {
-  color: $white;
+    color: $white;
   }
 }
-.section-title__sub{
-font-family: $third-font-family;
-color: $lightGreen;
-font-size: rem(12);
-font-weight: $regular;
-line-height: 1.5;
-margin-top: rem(4);
+.section-title__sub {
+  font-family: $third-font-family;
+  color: $lightGreen;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  margin-top: rem(4);
   @include mq('md') {
-  margin-top: rem(3);
+    margin-top: rem(3);
   }
-
 }
-.section-title__sub.section-title__sub--blog{
+.section-title__sub.section-title__sub--blog {
   @include mq('md') {
-  color: $white;
+    color: $white;
   }
 }

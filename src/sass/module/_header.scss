@@ -14,7 +14,6 @@
   display: flex;
   justify-content: space-between;
   @include mq('md') {
-    // padding: 0 rem(40);
     padding-left: rem(40);
     padding-right: rem(20);
   }
@@ -67,7 +66,6 @@
 }
 
 .header__nav-item a {
-  // padding: 0 rem(20);
   padding-right: rem(20);
   padding-left: rem(20);
   height: inherit;
@@ -83,8 +81,6 @@
   text-transform: capitalize;
   transition: opacity 0.3s;
   position: relative;
-}
-.header__nav-item a:not(:first-child) {
 }
 
 .header__nav-item a:hover {
@@ -182,7 +178,6 @@
 
 // ドロワー
 .header__drawer {
-  // padding: rem(228) 0;
   padding-top: rem(80);
   display: none;
   position: absolute;
@@ -200,9 +195,6 @@
 
 .header__drawer::-webkit-scrollbar {
   display: none;
-}
-
-.header__drawer-logo {
 }
 
 .header__drawer-nav {
@@ -260,7 +252,6 @@
 }
 
 .header__drawer-right {
-  // margin-left: 25px;
   @include mq('md') {
   }
 }

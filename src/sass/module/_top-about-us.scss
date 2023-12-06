@@ -37,7 +37,6 @@
 }
 
 .top-about-image__left {
-  // position: absolute;
   left: 0;
   top: 0;
   width: 37.1%;
@@ -51,15 +50,11 @@
   object-fit: cover;
   @include mq('md') {
     aspect-ratio: 400 / 606;
-    // height: 100%;
   }
 }
 .top-about-image__right {
-  // position: absolute;
-  // top: 14.59%;
   margin-left: -18.5%;
   margin-top: 7.25%;
-  // right: 0;
   width: 81.45%;
   @include mq('md') {
     position: relative;
@@ -68,7 +63,6 @@
 .top-about-image__right img {
   aspect-ratio: 281 / 186;
   object-fit: cover;
-  // max-width: 81.4492753623%;
   width: 100%;
   @include mq('md') {
     aspect-ratio: 880 / 581;
@@ -98,7 +92,6 @@
   color: $lightGreen;
   text-align: left;
   @include mq('md') {
-    // color: $white;
     color: $white;
     font-size: rem(80);
     line-height: 1.25;

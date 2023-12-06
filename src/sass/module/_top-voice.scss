@@ -7,24 +7,6 @@
   }
 }
 
-// .top-voice__inner{
-//   @include mq('md') {
-//     position: absolute;
-//     content: '';
-//     background-image: url(../images/common/fish-right.svg);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//     width: rem(194);
-//     height: rem(181);
-//     left: 0.6%;
-//     top: -12%;
-//   }
-//   @include mq('lg') {
-//     left: -6.4%;
-//   }
-// }
-
 .top-voice__inner {
   position: relative;
 }
@@ -45,7 +27,6 @@
   @include mq('lg') {
     left: -5%;
     top: -19%;
-    // right: -6.4%;
   }
 }
 .top-voice__inner::after {
@@ -64,7 +45,6 @@
   @include mq('lg') {
     bottom: -10.6%;
     right: 2.1%;
-    // right: -6.4%;
   }
 }
 .top-voice__cards {

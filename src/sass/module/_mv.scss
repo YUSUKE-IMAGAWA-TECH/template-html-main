@@ -20,7 +20,7 @@
   }
 }
 
-.mv__swiper-mask{
+.mv__swiper-mask {
   overflow: hidden;
 }
 
@@ -34,15 +34,11 @@
   max-width: rem(500);
   text-align: center;
   white-space: nowrap;
-  // max-width: rem(310);
   text-align: center;
   @include mq('md') {
     top: 50%;
     left: 48.6%;
     transform: translate(-50%, -50%);
-    // max-width: 100%;
-    // width: 100%;
-    // margin-left: 6%;
   }
 }
 
@@ -52,7 +48,6 @@
   text-indent: rem(21);
   font-size: rem(40);
   font-weight: $regular;
-  // line-height: 1.428;
   font-family: $second-font-family;
   letter-spacing: 0.54em;
   color: $white;
@@ -72,11 +67,9 @@
   text-align: center;
   font-family: $base-font-family;
   text-align: center;
-  // letter-spacing: 0em;
-  // text-indent: 1.3em;
+
   color: $white;
   font-weight: $regular;
-  // color: $beigeText;
   width: 100%;
   @include mq('md') {
     font-size: rem(18);

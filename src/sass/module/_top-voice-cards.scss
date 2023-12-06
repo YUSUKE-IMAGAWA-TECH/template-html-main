@@ -10,7 +10,6 @@
   }
 }
 .top-voice-cards__item a {
-  // padding: rem(16) rem(16);
   padding: rem(16) rem(16) rem(23) rem(16);
   display: block;
   height: 100%;
@@ -62,7 +61,6 @@
   border: rem(1) solid $lightGreen;
   text-align: center;
   padding: rem(3) rem(11);
-  // max-width: rem(108);
   display: inline-flex;
 
   @include mq('md') {

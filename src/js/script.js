@@ -1,24 +1,6 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
   // ヘッダーの高さ分だけコンテンツを下げる
-  // $(function () {
-  //   const height = $('.js-header').height();
-  //   $('main').css('margin-top', height);
-  // });
-  // // ページ内スクロール
-  // $(function () {
-  //   // ヘッダーの高さ取得
-  //   const headerHeight = $('.js-header').height();
-  //   $('a[href^="#"]').click(function () {
-  //     const speed = 600;
-  //     let href = $(this).attr('href');
-  //     let target = $(href == '#' || href == '' ? 'html' : href);
-  //     // ヘッダーの高さ分下げる
-  //     let position = target.offset().top - headerHeight;
-  //     $('body,html').animate({ scrollTop: position }, speed, 'swing');
-  //     return false;
-  //   });
-  // });
 
   $(function () {
     // ヘッダーの高さ取得
@@ -27,7 +9,7 @@ jQuery(function ($) {
       const speed = 600;
       let href = $(this).attr('href');
       let target = $(href === '#' || href === '' ? 'html' : href);
-  
+
       // スクロール位置の計算
       let position;
       if (href === '.mv') {
@@ -37,12 +19,11 @@ jQuery(function ($) {
         // それ以外の場合、ヘッダーの高さを差し引く
         position = target.offset().top - headerHeight;
       }
-  
+
       $('body,html').animate({ scrollTop: position }, speed, 'swing');
       return false;
     });
   });
-  
 });
 // ハンバーガーメニュー
 $(function () {
@@ -128,14 +109,7 @@ jQuery(function ($) {
         spaceBetween: 30,
       },
     },
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 3,
-    //     loopAdditionalSlides: 3.5,
 
-    //     spaceBetween: 40,
-    //   },
-    // },
     navigation: {
       nextEl: '.top-campaign__button-next',
       prevEl: '.top-campaign__button-prev',
