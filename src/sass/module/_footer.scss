@@ -52,6 +52,7 @@
 .footer__nav {
   height: inherit;
   display: flex;
+  justify-content: center;
   padding-right: rem(15);
   padding-left: rem(23);
   gap: rem(39);
@@ -75,7 +76,7 @@
   text-align: center;
   white-space: nowrap;
 }
-.footer__item.footer__item-title a {
+.footer__item.footer__item--title a {
   font-weight: $bold;
   padding-top: rem(28);
   position: relative;
@@ -83,7 +84,7 @@
   @include mq('md') {
   }
 }
-.footer__item.footer__item-title a::before {
+.footer__item.footer__item--title a::before {
   position: absolute;
   content: '';
   background-image: url('../images/common/hitode.svg');

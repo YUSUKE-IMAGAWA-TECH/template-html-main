@@ -55,7 +55,7 @@
 
 .top-blog-cards__title {
   font-family: $third-font-family;
-  border-bottom: 1px solid $lightGreen;
+  border-bottom: rem(1) solid $lightGreen;
   font-size: rem(16);
   line-height: 1.5;
   font-weight: $medium;

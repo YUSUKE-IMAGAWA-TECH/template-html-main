@@ -177,6 +177,7 @@
 }
 
 // ドロワー
+
 .header__drawer {
   padding-top: rem(80);
   display: none;
@@ -255,3 +256,12 @@
   @include mq('md') {
   }
 }
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
+
+// html, body.active {
+//   height: 100%;
+//   overflow: hidden;
+// }

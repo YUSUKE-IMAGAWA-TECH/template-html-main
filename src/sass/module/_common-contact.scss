@@ -100,10 +100,18 @@
   }
 }
 .common-contact__map iframe {
-  @include mq('md') {
-    width: rem(273);
-    height: rem(148);
-  }
+  aspect-ratio: 295/160;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  // @include mq('md') {
+  //   width: rem(273);
+  //   height: rem(148);
+  // }
+  // @include mq('sm') {
+  // width: rem(250);
+  // height: rem(135.59);
+  // }
 }
 
 .common-contact__here {

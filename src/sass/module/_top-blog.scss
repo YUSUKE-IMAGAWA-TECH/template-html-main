@@ -2,15 +2,27 @@
 
 .top-blog {
   @include mq('md') {
+  position: relative;
+  padding-top: rem(95);
+  }
+}
+
+.top-blog::after{
+  @include mq('md') {
+    position: absolute;
     background-image: url(../images/common/top-blog-bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
     z-index: -1;
-    height: 60.1684%;
-    padding-top: rem(95);
+    height: rem(500);
+    
     content: '';
     width: 100%;
+    top: 0;
+    left: 0;
   }
+
 }
 
 .top-blog__inner {

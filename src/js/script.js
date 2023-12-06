@@ -29,6 +29,8 @@ jQuery(function ($) {
 $(function () {
   $('.js-hamburger').on('click', function () {
     $(this).toggleClass('is-open');
+    $('body').addClass('active');
+    //追加
     if ($(this).hasClass('is-open')) {
       openDrawer();
     } else {
@@ -40,13 +42,20 @@ $(function () {
   $('.js-drawer a[href]').on('click', function () {
     closeDrawer();
   });
+  function closeDrawer() {
+   
+    $('body').removeClass('active');
+    $('.js-hamburger').removeClass('is-open');
 
-  // resizeイベント
-  $(window).on('resize', function () {
-    if (window.matchMedia('(min-width: 768px)').matches) {
-      closeDrawer();
-    }
-  });
+    $('.js-drawer').fadeOut();
+  }
+});
+
+// resizeイベント
+$(window).on('resize', function () {
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    closeDrawer();
+  }
 });
 
 function openDrawer() {
@@ -57,6 +66,7 @@ function openDrawer() {
 function closeDrawer() {
   $('.js-drawer').fadeOut();
   $('.js-hamburger').removeClass('is-open');
+  $('body').removeClass('active');
 }
 // MV スライダー
 const swiper = new Swiper('.js-top-mv-swiper', {
