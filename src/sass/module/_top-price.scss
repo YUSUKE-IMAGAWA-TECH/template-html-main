@@ -9,6 +9,29 @@
   }
 }
 
+.top-price__inner {
+  position: relative;
+}
+.top-price__inner::after {
+  @include mq('md') {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/fish-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(437);
+    height: rem(201);
+    left: 4%;
+    bottom: -12%;
+  }
+  @include mq('lg') {
+    left: -5%;
+    bottom: -4.7%;
+    // right: -6.4%;
+  }
+}
+
 .top-price__container {
   margin-top: rem(30);
   @include mq('md') {

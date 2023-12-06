@@ -15,6 +15,22 @@
   height: rem(50);
   top: -4%;
   right: 4%;
+
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    right: 0.6%;
+    top: -12%;
+  }
+  @include mq('lg') {
+    right: -9.4%;
+    top: -9%;
+  }
+  // @include mq('nm') {
+  //   top: -9%;
+  //   right: -4.4%;
+   
+  // }
 }
 
 .common-contact__container {

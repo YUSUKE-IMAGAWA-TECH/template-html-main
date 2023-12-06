@@ -1,11 +1,14 @@
-@use "global" as *;
+@use 'global' as *;
 
-.page-top{
+.page-top {
   width: rem(48);
   height: rem(48);
-
   @include mq('md') {
-  width: rem(80);
-  height: rem(80);
+    width: rem(80);
+    height: rem(80);
   }
+}
+
+.page-top a {
+  cursor: pointer;
 }

@@ -8,23 +8,35 @@
     // background-position: center;
     z-index: -1;
     height: 60.1684%;
-    padding-top: rem(97);
+    padding-top: rem(95);
     content: '';
     width: 100%;
   }
 }
 
-.top-blog__inner{
+.top-blog__inner {
   position: relative;
 }
 
-.top-blog__inner::after{
+.top-blog__inner::after {
   @include mq('md') {
-  
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/fish-left-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(437);
+    height: rem(201);
+    left: 0;
+    top: -6%;
+
   }
-  
   @include mq('lg') {
-  
+    left: -5%;
+    top: -10%;
+    // right: -6.4%;
+    
   }
 }
 .top-blog__inner.inner {

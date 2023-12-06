@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .top-voice {
-  padding-bottom:rem(80);
+  padding-bottom: rem(80);
   @include mq('md') {
     padding-bottom: rem(140);
   }
@@ -25,6 +25,48 @@
 //   }
 // }
 
+.top-voice__inner {
+  position: relative;
+}
+
+.top-voice__inner::before {
+  @include mq('md') {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/fish-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(301);
+    height: rem(138);
+    left: 0;
+    top: -12%;
+  }
+  @include mq('lg') {
+    left: -5%;
+    top: -19%;
+    // right: -6.4%;
+  }
+}
+.top-voice__inner::after {
+  @include mq('md') {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/seahorse.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(71);
+    height: rem(162);
+    right: 2%;
+    bottom: 0;
+  }
+  @include mq('lg') {
+    bottom: -10.6%;
+    right: 2.1%;
+    // right: -6.4%;
+  }
+}
 .top-voice__cards {
   margin-top: rem(43);
   @include mq('md') {

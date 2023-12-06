@@ -14,8 +14,9 @@ $mediaquerys: (
   $breakpoints: (
     sm: 600,
     md: 768,
-    lg: 1280,
-    xl: 1440,
+    lg: 1350,
+    nm:1200,
+    xl: 1350,
   );
 
   //メディアクエリー
@@ -23,6 +24,7 @@ $mediaquerys: (
     sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
     md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
     lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+    nm: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
     xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
   );
 

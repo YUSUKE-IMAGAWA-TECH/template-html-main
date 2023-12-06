@@ -1,40 +1,82 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
+  // ヘッダーの高さ分だけコンテンツを下げる
+  // $(function () {
+  //   const height = $('.js-header').height();
+  //   $('main').css('margin-top', height);
+  // });
+  // // ページ内スクロール
+  // $(function () {
+  //   // ヘッダーの高さ取得
+  //   const headerHeight = $('.js-header').height();
+  //   $('a[href^="#"]').click(function () {
+  //     const speed = 600;
+  //     let href = $(this).attr('href');
+  //     let target = $(href == '#' || href == '' ? 'html' : href);
+  //     // ヘッダーの高さ分下げる
+  //     let position = target.offset().top - headerHeight;
+  //     $('body,html').animate({ scrollTop: position }, speed, 'swing');
+  //     return false;
+  //   });
+  // });
 
-  // ハンバーガーメニュー
   $(function () {
-    $('.js-hamburger').on('click', function () {
-      $(this).toggleClass('is-open');
-      if ($(this).hasClass('is-open')) {
-        openDrawer();
+    // ヘッダーの高さ取得
+    const headerHeight = $('.js-header').height();
+    $('a[href^="#"]').click(function () {
+      const speed = 600;
+      let href = $(this).attr('href');
+      let target = $(href === '#' || href === '' ? 'html' : href);
+  
+      // スクロール位置の計算
+      let position;
+      if (href === '.mv') {
+        // mvセクションへのリンクの場合、ヘッダーの高さは考慮しない
+        position = target.offset().top;
       } else {
-        closeDrawer();
+        // それ以外の場合、ヘッダーの高さを差し引く
+        position = target.offset().top - headerHeight;
       }
-    });
-
-    // backgroundまたはページ内リンクをクリックで閉じる
-    $('.js-drawer a[href]').on('click', function () {
-      closeDrawer();
-    });
-
-    // resizeイベント
-    $(window).on('resize', function () {
-      if (window.matchMedia('(min-width: 768px)').matches) {
-        closeDrawer();
-      }
+  
+      $('body,html').animate({ scrollTop: position }, speed, 'swing');
+      return false;
     });
   });
-
-  function openDrawer() {
-    $('.js-drawer').fadeIn();
-    $('.js-hamburger').addClass('is-open');
-  }
-
-  function closeDrawer() {
-    $('.js-drawer').fadeOut();
-    $('.js-hamburger').removeClass('is-open');
-  }
+  
 });
+// ハンバーガーメニュー
+$(function () {
+  $('.js-hamburger').on('click', function () {
+    $(this).toggleClass('is-open');
+    if ($(this).hasClass('is-open')) {
+      openDrawer();
+    } else {
+      closeDrawer();
+    }
+  });
+
+  // backgroundまたはページ内リンクをクリックで閉じる
+  $('.js-drawer a[href]').on('click', function () {
+    closeDrawer();
+  });
+
+  // resizeイベント
+  $(window).on('resize', function () {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      closeDrawer();
+    }
+  });
+});
+
+function openDrawer() {
+  $('.js-drawer').fadeIn();
+  $('.js-hamburger').addClass('is-open');
+}
+
+function closeDrawer() {
+  $('.js-drawer').fadeOut();
+  $('.js-hamburger').removeClass('is-open');
+}
 // MV スライダー
 const swiper = new Swiper('.js-top-mv-swiper', {
   loop: true,
@@ -74,10 +116,10 @@ jQuery(function ($) {
     slidesPerView: 1.31,
     spaceBetween: 24,
     paginationClickable: true,
-    // autoplay: {
-    //   delay: 0,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         slidesPerView: 4.058,
