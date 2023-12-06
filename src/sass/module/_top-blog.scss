@@ -13,6 +13,20 @@
     width: 100%;
   }
 }
+
+.top-blog__inner{
+  position: relative;
+}
+
+.top-blog__inner::after{
+  @include mq('md') {
+  
+  }
+  
+  @include mq('lg') {
+  
+  }
+}
 .top-blog__inner.inner {
   padding: 0 rem(21);
 }

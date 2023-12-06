@@ -45,7 +45,7 @@
   object-fit: contain;
   width: rem(102);
   @include mq('md') {
-  width: rem(133);
+    width: rem(133);
   }
 }
 
@@ -84,7 +84,7 @@
   transition: opacity 0.3s;
   position: relative;
 }
-.header__nav-item a:not(:first-child){
+.header__nav-item a:not(:first-child) {
 }
 
 .header__nav-item a:hover {
@@ -148,7 +148,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: rem(40);
+  width: rem(33);
   height: rem(1);
   background-color: #fff;
   transition: 0.5s;
@@ -211,7 +211,7 @@
   justify-content: center;
   padding-right: rem(15);
   padding-left: rem(15);
-  gap: rem(28);
+  gap: rem(30);
 
   @include mq('md') {
   }
@@ -234,6 +234,7 @@
   padding-top: rem(27);
   text-align: left;
   position: relative;
+  text-indent: -0.2em;
   @include mq('md') {
   }
 }

@@ -3,14 +3,15 @@
 .footer {
   background-color: $lightGreen;
   padding-bottom: rem(56);
+  padding-top: rem(48);
+
   @include mq('md') {
     padding-bottom: rem(80);
   }
 }
 .footer__logos {
-  padding-top: rem(48);
   @include mq('md') {
-    padding-top: rem(80);
+    padding-top: rem(76);
     display: flex;
     align-items: flex-end;
   }
@@ -27,6 +28,7 @@
   gap: rem(16);
   margin-top: rem(17);
   @include mq('md') {
+    margin-left: rem(40);
   }
 }
 
@@ -53,12 +55,13 @@
   padding-right: rem(15);
   padding-left: rem(23);
   gap: rem(39);
-  padding-bottom: rem(23);
+  // padding-bottom: rem(23);
   margin-top: rem(12);
 
   @include mq('md') {
-    padding-bottom: rem(80);
-    column-gap: rem(120);
+    // padding-bottom: rem(80);
+    column-gap: rem(143);
+    margin-top: 0;
   }
 }
 
@@ -100,7 +103,7 @@
   height: inherit;
   @include mq('md') {
     display: flex;
-    column-gap: rem(120);
+    column-gap: rem(141);
   }
 }
 
@@ -108,7 +111,7 @@
   // margin-left: 25px;
   @include mq('md') {
     display: flex;
-    column-gap: rem(120);
+    column-gap: rem(141);
   }
 }
 
@@ -118,7 +121,12 @@
   line-height: 1.5;
   font-weight: $regular;
   color: $white;
+  display: inline-block;
+  margin-top: rem(27);
   @include mq('md') {
+    margin-top: rem(69);
+    display: block;
+    text-align: center;
     line-height: 1.2857;
     font-size: rem(14);
   }

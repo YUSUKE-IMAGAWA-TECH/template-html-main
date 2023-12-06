@@ -1,7 +1,24 @@
 @use 'global' as *;
 
 .top-about-us__inner {
-  // position: relative;
+  position: relative;
+}
+.top-about-us__inner::after {
+  @include mq('md') {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/sango.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(194);
+    height: rem(181);
+    right: 0.6%;
+    bottom: -12%;
+  }
+  @include mq('lg') {
+    right: -6.4%;
+  }
 }
 
 .top-about-us__container {
@@ -109,7 +126,7 @@
   }
 }
 .top-about-us__button {
-  margin-top: rem(50);
+  margin-top: rem(26);
   @include mq('md') {
     margin-top: rem(40);
   }

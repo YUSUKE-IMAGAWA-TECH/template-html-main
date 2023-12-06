@@ -74,10 +74,10 @@ jQuery(function ($) {
     slidesPerView: 1.31,
     spaceBetween: 24,
     paginationClickable: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       768: {
         slidesPerView: 4.058,

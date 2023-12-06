@@ -6,6 +6,25 @@
     padding-bottom: rem(140);
   }
 }
+
+// .top-voice__inner{
+//   @include mq('md') {
+//     position: absolute;
+//     content: '';
+//     background-image: url(../images/common/fish-right.svg);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+//     width: rem(194);
+//     height: rem(181);
+//     left: 0.6%;
+//     top: -12%;
+//   }
+//   @include mq('lg') {
+//     left: -6.4%;
+//   }
+// }
+
 .top-voice__cards {
   margin-top: rem(43);
   @include mq('md') {
