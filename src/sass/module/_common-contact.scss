@@ -73,6 +73,7 @@
   @include mq('md') {
     text-align: left;
     margin-top: rem(2);
+    width: 33.18181818%;
   }
 }
 
@@ -91,6 +92,7 @@
   text-align: center;
   margin-top: rem(16);
   @include mq('md') {
+    width: 62.04545455%;
     margin-top: 0;
   }
 }
@@ -99,6 +101,9 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+  @include mq('md') {
+    aspect-ratio: 273 / 148;
+  }
 }
 
 .common-contact__here {
