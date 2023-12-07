@@ -13,12 +13,10 @@
     background-position: center;
     width: rem(194);
     height: rem(181);
-    right: 0.6%;
+    right: calc(50% - min(48vw, 40rem));
     bottom: -12%;
   }
-  @include mq('lg') {
-    right: -6.4%;
-  }
+
 }
 
 .top-about-us__container {
@@ -111,7 +109,7 @@
   }
 }
 
-.top-about-us__box{
+.top-about-us__box {
   text-align: center;
   margin-top: rem(17);
   @include mq('md') {

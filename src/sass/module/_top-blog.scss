@@ -39,13 +39,10 @@
     background-position: center;
     width: rem(437);
     height: rem(201);
-    left: 0;
+    left: calc(50% - min(48vw, 38.75rem));
     top: -6%;
   }
-  @include mq('lg') {
-    left: -5%;
-    top: -10%;
-  }
+
 }
 .top-blog__inner.inner {
   padding: 0 rem(21);

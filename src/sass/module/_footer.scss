@@ -75,7 +75,13 @@
   color: $white;
   text-align: center;
   white-space: nowrap;
+ transition: opacity 0.3s;
 }
+
+.footer__item a:hover{
+  opacity: 0.7;
+}
+
 .footer__item.footer__item--title a {
   font-weight: $bold;
   padding-top: rem(28);
@@ -95,7 +101,7 @@
   left: rem(-20);
   width: rem(18);
   height: rem(18);
-  z-index: 1100;
+  z-index: 10;
 }
 
 .footer__left {

@@ -6,11 +6,21 @@
 .top-campaign-swiper__swiper-slide {
   height: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
+  @include mq('md') {
+    // width: 333px;
+    max-width: rem(333);
+  }
 }
 .top-campaign-swiper__swiper-slide a {
   height: 100%;
-  box-shadow: rem(2) rem(2) rem(2) 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: block;
+
+  box-shadow: 0px rem(4) rem(4) rgba(0, 0, 0, 0.25);
+  @include mq('md') {
+  }
 }
 .top-campaign__swiper-container {
   overflow-x: hidden;
@@ -25,8 +35,6 @@
 }
 
 .top-campaign-swiper__swiper-slide a {
-  width: 100%;
-  display: block;
 }
 .top-campaign-swiper__item {
   height: 100%;

@@ -43,7 +43,6 @@ $(function () {
     closeDrawer();
   });
   function closeDrawer() {
-   
     $('body').removeClass('active');
     $('.js-hamburger').removeClass('is-open');
 
@@ -104,19 +103,20 @@ jQuery(function ($) {
   const service_swiper = new Swiper('.js-top-campaign-swiper', {
     loop: true,
     speed: 3000,
-    slidesPerView: 1.31,
+    // slidesPerView: 1.31,
+    slidesPerView: 'auto',
     spaceBetween: 24,
-    paginationClickable: true,
+    // paginationClickable: true,
     autoplay: {
       delay: 1500,
       disableOnInteraction: false,
     },
     breakpoints: {
       768: {
-        slidesPerView: 4.058,
-        loopAdditionalSlides: 4.5,
+        // slidesPerView: 4.5,
+        // loopAdditionalSlides: 4,
 
-        spaceBetween: 30,
+        spaceBetween: 40,
       },
     },
 

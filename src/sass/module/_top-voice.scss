@@ -21,13 +21,10 @@
     background-position: center;
     width: rem(301);
     height: rem(138);
-    left: 0;
+    left: calc(50% - min(48vw, 38.75rem));
     top: -12%;
   }
-  @include mq('lg') {
-    left: -5%;
-    top: -19%;
-  }
+
 }
 .top-voice__inner::after {
   @include mq('md') {
@@ -42,10 +39,7 @@
     right: 2%;
     bottom: 0;
   }
-  @include mq('lg') {
-    bottom: -10.6%;
-    right: 2.1%;
-  }
+
 }
 .top-voice__cards {
   margin-top: rem(43);

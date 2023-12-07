@@ -22,13 +22,10 @@
     background-position: center;
     width: rem(437);
     height: rem(201);
-    left: 4%;
+    left: calc(50% - min(50vw, 38.75rem));
     bottom: -12%;
   }
-  @include mq('lg') {
-    left: -5%;
-    bottom: -4.7%;
-  }
+
 }
 
 .top-price__container {
