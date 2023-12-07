@@ -1,14 +1,46 @@
 @use 'global' as *;
 
-.page-top {
-  width: rem(48);
-  height: rem(48);
+// .page-top {
+//   background-color: $white;
+//   @include mq('md') {
+//   }
+// }
+
+// .page-top a {
+//   cursor: pointer;
+//   display: inline-block; /* ボタンのサイズに合わせて背景色を設定する */
+//   background-color: $white;
+//   border-radius: 50%; /* 丸いボタンにする */
+// }
+
+// .page-top img {
+//   display: block;
+//   width: rem(48);
+//   height: rem(48);
+//   @include mq('md') {
+//     width: rem(80);
+//     height: rem(80);
+//   }
+// }
+
+.page-top a {
+  display: inline-block;
+  background-color: white; /* 背景色を白に設定 */
+  border-radius: 50%; /* 要素を円形にする */
+  width: rem(48); /* ボタンの幅 */
+  height: rem(48); /* ボタンの高さ */
+  text-align: center; /* 子要素を中央に配置 */
+  line-height: rem(48); /* 子要素を垂直中央に配置 */
   @include mq('md') {
     width: rem(80);
     height: rem(80);
+    line-height: rem(80);
   }
 }
 
-.page-top a {
-  cursor: pointer;
+.page-top a img {
+  width: 100%; /* 画像の幅を親要素に合わせる */
+  height: auto; /* 画像の高さを自動調整 */
+  vertical-align: middle; /* 画像を垂直中央に配置 */
 }
+
